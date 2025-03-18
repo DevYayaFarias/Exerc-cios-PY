@@ -1,0 +1,30 @@
+"""
+EXEMPLO DE CONDICIONAL SIMPLES
+"""
+ano_nasc = int(input(" Digite o seu ano de nascimento: "))
+ano_atual = 2025
+idade = ano_atual -ano_nasc
+print("Sua idade é", idade)
+if idade > 0:
+    if idade < 12:
+        print("Você ainda é bebê...")
+    elif idade >= 12 and idade <18:
+        print("Você já é adolescente!!")
+    elif idade >= 18 and idade < 65:
+        print("Você já é adulto (ou pelo menos deveria ser)!!")
+    else:
+        print("você está na melhor idade!!!")
+    print("Entendeu??")
+else:
+    print("Valores inválidos!!!")
+
+"""
+EXEMPLO DE CONDICIONAL SIMPLES
+"""
+ano_nasc = int(input(" Digite o seu ano de nascimento: "))
+ano_atual = 2025
+idade = ano_atual -ano_nasc
+resp = input("Você já fez aniversário este ano? (s/n):")
+if resp == "n":
+    idade -= 1
+print("Sua idade é", idade)
